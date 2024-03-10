@@ -14,11 +14,13 @@ class FeedbackForm(forms.Form):
             my_message: str = self.cleaned_data.get('my_message')
             review_area: str = self.cleaned_data.get('review_area')
 
-            if 'srvc' in review_area:
-                service_selected = True
+            #if 'srvc' in review_area:
+            #    service_selected = True
         
         if "awful" in my_message:
             raise forms.ValidationError(f"We don't take bad reviews like:'{my_message}'")
         
-        return render(request, self.template_name,{'form':form,'my_message':my_message,'service_selected':service_selected})
+        return {'my_message':my_message
+                                                   #,'service_selected':service_selected
+                                                   }
 
