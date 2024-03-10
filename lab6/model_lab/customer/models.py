@@ -12,3 +12,4 @@ class Order(models.Model):
     total_items=models.IntegerField()
     order_date=models.DateField(default=timezone.now().date())
 
+ 
