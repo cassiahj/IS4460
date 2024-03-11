@@ -18,5 +18,6 @@ class Movie(models.Model):
     release_year=models.IntegerField()
     budget=models.IntegerField()
     runtime=models.IntegerField()
-    rating=models.DecimalField(max_digits=2, decimal_places=2)
+    rating=models.IntegerField()
     genre=models.CharField(max_length=40)
+
