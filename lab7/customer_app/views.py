@@ -40,7 +40,7 @@ class ContactEdit(View):
         else:
             contact= Contact()
 
-        form = ContactForm(isinstance=contact)
+        form = ContactForm(instance=contact)
 
         return render(request=request, template_name='customer_app/contact_edit.html',
                       context= {'contact':contact,'form':form})
