@@ -20,7 +20,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-&cqaau-jqdu=1*u)+$wz%)^&7mnxynukv!xfu&qy_5)g+)_evc'
+SECRET_KEY = 'django-insecure-xe^wcq*5(1h1ys#dndhvml8_o3s&a@7xoj8bmx5lv#=yjf0qfn'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -33,6 +33,8 @@ ALLOWED_HOSTS = []
 INSTALLED_APPS = [
     #'cinemark.apps.CinemarkConfig',
     'cinemark',
+    'rest_framework',
+    'rest_framework.authtoken',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
